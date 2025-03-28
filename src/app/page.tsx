@@ -1,4 +1,4 @@
-import { tools } from '../../data/tools'
+import { tools } from '@/data/tools'
 import Image from 'next/image'
 import Link from 'next/link'
 
