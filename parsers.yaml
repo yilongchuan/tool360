@@ -1,0 +1,13 @@
+parsers:
+  - url: 您的订阅链接
+    yaml:
+      prepend-rules:
+        - DOMAIN-SUFFIX,vercel.app,🚀 节点选择
+        - DOMAIN-SUFFIX,vercel.com,🚀 节点选择
+      mix-rule-providers:
+        custom:
+          type: http
+          behavior: domain
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+          path: ./ruleset/proxy.yaml
+          interval: 86400 
